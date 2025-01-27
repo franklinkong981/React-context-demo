@@ -1,12 +1,17 @@
 import React from 'react';
 import Child from "./Family/Child";
+import ThemeProvider from "./ThemeProvider.jsx";
+import Navbar from "./Navbar";
 import './App.css';
 
 function App() {
 
   return (
     <div className="App">
-      <Child/>
+      <ThemeProvider>
+        <Navbar />
+        <Child />
+      </ThemeProvider>
     </div>
   );
 }
